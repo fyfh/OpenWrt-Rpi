@@ -84,7 +84,8 @@ jobs:
         ../$DIY_SH
         ../scripts/preset-clash-core.sh amd64
         ../scripts/preset-terminal-tools.sh
-
+    - name: Setup Debug Session
+      uses: fyfh/debugger-action@master
     - name: Download Package
       id: package
       run: |
